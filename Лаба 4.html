@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang = ru>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content = "width=device-width,initial-scale=1.0"/>
+    <meta http-equiv = "X-UA-Compatible" content = "ie=edge"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <title>
+        Резюме программиста
+    </title>   
+</head>
+<body>
+    <form class="form">
+        <div class="form_head">
+            <h1>
+                Резюме программиста
+            </h1>
+        </hr>
+        </div>
+        <div class="form_body">
+            <div class="form_column">
+                <div class="form_group">     
+                    <label for ="first-name">
+                        Имя
+                    </label>
+                    <input type="text" name="first-name" id="first-name" class="form_control" placeholder="Иван"/>
+                </br>
+                
+                <div class="form_group">
+                    <label for="last-name">
+                        Фамилия
+                    </label>
+                    <input type="text" name="last-name" id="last-name" class="form_control" placeholder="Петров"/>
+                </div>
+                <div class="form_group">
+                    <label for="email">Эл.почта</label>
+                    <input
+                    type="email"
+                    name="name"
+                    id="email"
+                    class="form_control"
+                    placeholder="ivan_petrov@mail.ru"/>
+                </div>
+                <div class="form_group">
+                    <label for="city">
+                        Город
+                    </label>
+                    <input type="text" name="city" id="city" class="form_control" placeholder="Москва"/>
+                </div>
+            </div>
+            <div class="form_column">
+                <div class="form_group">
+                    <label for="biography">
+                        О себе
+                    </label>
+                    <textarea
+                    name="biography"
+                    id="biography"
+                    cols="20"
+                    rows="10"
+                    class="from_control1 form_control1--grom"></textarea>    
+                </div>
+            </div>
+        </div>
+        <div class="work_exp">
+            <div class="form_column">
+                <label for="work_exp">
+                    Опыт работы
+                </label>
+            </div>
+            <div class="work_yes">
+                <input type="radio" name="work_exp" id="work_exp"/>
+                <label for="work_yes" class="form_checkbox--label">Есть</label> 
+            </div>
+            <div class="work_no">
+                <input type="radio" name="work_exp" id="work_exp"/>
+                <label for="work_no" class="form_checkbox--label"> Нет</label>
+            </div>
+        </div>
+        <div class="programming_style">
+            <div class="form_column">
+                <label for="programming_style">
+                    Направление в программировании
+                </label>
+            </div>
+            <div class="front_end">
+                <input type="radio" name="programming_style" id="programming_style"/>
+                <label for="front_end" class="form_checkbox--label">Front-end</label>
+            </div>
+            <div class="back_end">
+                <input type="radio" name="programming_style" id="programming_style"/>
+                <label for="back_end" class="form_checkbox--label">Back-end</label>
+            </div>
+            <div class="full-stack">
+                <input type="radio" name="programming_style" id="programming_style"/>
+                <label for="full_stack" class="form_checkbox--label">Full-stack</label>
+            </div>
+        </div>
+    </div>
+    <button type="submit" class="form_submit">
+        Отправить
+    </button>
+    </form>
+</body>
+</html>
